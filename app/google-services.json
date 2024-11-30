@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907874492001",
+    "project_id": "mc02-ad817",
+    "storage_bucket": "mc02-ad817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907874492001:android:749e451ef81d95640d9420",
+        "android_client_info": {
+          "package_name": "com.mobdeve.mc02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCchwmzCBUUW4_V8QY1duvUD6pIhfqB67E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
