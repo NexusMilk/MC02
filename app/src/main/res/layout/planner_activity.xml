@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <!-- Header with Title -->
+    <TextView
+        android:id="@+id/tv_planner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Planner and Task"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_txt_bg"
+        android:hint="Note Title"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Content EditText -->
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_txt_bg"
+        android:hint="Note Content"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Date/Time Title -->
+    <TextView
+        android:id="@+id/plannerTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Date/Time"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Deadline Date EditText -->
+    <EditText
+        android:id="@+id/et_deadline_date"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_txt_bg"
+        android:hint="Enter deadline date (DD/MM/YYYY)"
+        android:inputType="date"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Time EditText -->
+    <EditText
+        android:id="@+id/et_planner_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_txt_bg"
+        android:hint="Enter time (HH:mm)"
+        android:inputType="time"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Set Plan Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:text="Set plan"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="16sp" />
+
+    <!-- Plans Label -->
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Plans:"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Scrollable Container for Plans -->
+    <ScrollView
+        android:id="@+id/notesScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/plannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="16dp" />
+    </ScrollView>
+
+</LinearLayout>

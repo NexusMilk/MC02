@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MC02</string>
+    <string name="TASKMASTER">TASKMASTER</string>
+    <string name="task_reminder">Task &amp; Reminder</string>
+    <string name="planner_time_label">reminder_time_label\n</string>
+</resources>
